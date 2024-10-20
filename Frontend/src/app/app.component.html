@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <span>Job Portal</span>
+  
+  <!-- Spacer to push links to the right -->
+  <span class="spacer"></span>
+  
+  <!-- Navigation Links -->
+  <a mat-button routerLink="/jobs" routerLinkActive="active-link">Job Listings</a>
+  
+  
+  <a mat-button routerLink="/apply-job" routerLinkActive="active-link">Apply for Job</a>
+  <a mat-button routerLink="/post-job" routerLinkActive="active-link">Post a Job</a>
+</mat-toolbar>
+
+
+
+<!-- Add the router outlet to display different components when navigating -->
+<router-outlet></router-outlet>
+
+
+<!-- <nav>
+  <a routerLink="/jobs">Job Listings</a>
+  <a routerLink="/post-job">Post a Job</a>
+</nav> -->
+<router-outlet></router-outlet>
+

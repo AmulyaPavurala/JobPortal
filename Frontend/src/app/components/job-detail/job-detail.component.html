@@ -1,0 +1,12 @@
+
+  <h2 class="text-center my-4">Job Details</h2>
+<div *ngIf="job" class="card mx-auto" style="max-width: 600px;">
+    <div class="card-body">
+        <h1 class="card-title text-primary">{{ job.jobTitle }}</h1>
+        <p class="card-text"><strong>Job Id:</strong> {{ job.id }}</p>
+        <p class="card-text"><strong>Description:</strong> {{ job.jobDescription }}</p>
+        <p class="card-text"><strong>Company:</strong>   {{ job.company.companyName }}</p>
+        <p class="card-text"><strong>Location:</strong> {{ job.location }}</p>
+        <a routerLink="/jobs" class="btn btn-secondary mt-3">Back to Job Listings</a>
+    </div>
+</div>

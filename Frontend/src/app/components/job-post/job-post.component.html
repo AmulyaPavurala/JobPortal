@@ -1,0 +1,51 @@
+
+<mat-card class="job-post-card">
+  <mat-card-header>
+    <mat-toolbar color="primary">
+      <span>Create Job Post</span>
+    </mat-toolbar>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form (ngSubmit)="createJobPost()"  class="job-post-form">
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Company ID</mat-label>
+        <input matInput type="number" [(ngModel)]="newJobPost.id" name="id" required>
+      </mat-form-field>
+
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Job Title</mat-label>
+        <input matInput [(ngModel)]="newJobPost.jobTitle" name="jobTitle" required>
+      </mat-form-field>
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Job Description</mat-label>
+        <textarea matInput [(ngModel)]="newJobPost.jobDescription" name="jobDescription" required></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Skills Required</mat-label>
+        <input matInput [(ngModel)]="newJobPost.skillsRequired" name="skillsRequired" required>
+      </mat-form-field>
+
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Location</mat-label>
+        <input matInput [(ngModel)]="newJobPost.location" name="location" required>
+      </mat-form-field>
+
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Job Type</mat-label>
+        <input matInput [(ngModel)]="newJobPost.jobType" name="jobType" required>
+      </mat-form-field>
+
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Salary Range</mat-label>
+        <input matInput [(ngModel)]="newJobPost.salaryRange" name="salaryRange" required>
+      </mat-form-field>
+
+      <div class="button-container">
+        <button mat-raised-button color="primary" type="submit" >Create Job Post</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+

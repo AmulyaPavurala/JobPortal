@@ -1,0 +1,27 @@
+.job-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space jobs evenly */
+    padding: 16px;
+  }
+  
+  .job-card {
+    margin: 16px;
+    width: 300px; /* Set a fixed width for cards */
+  }
+  
+  /* Optional: Style the toolbar */
+  mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  mat-card {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  mat-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hover effect */
+  }
+  

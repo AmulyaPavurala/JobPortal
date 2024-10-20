@@ -1,0 +1,39 @@
+<mat-card class="apply-job-card">
+    <mat-card-header>
+      <mat-toolbar color="primary">
+        <span>Apply for Job</span>
+      </mat-toolbar>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="applyForm" (ngSubmit)="applyToJob()">
+        <div class="form-container">
+  
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Job ID</mat-label>
+            <input matInput formControlName="id" type="number" required>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>User ID</mat-label>
+            <input matInput formControlName="userId" type="number" required>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Cover Letter</mat-label>
+            <textarea matInput formControlName="coverLetter" required></textarea>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Resume</mat-label>
+            <input matInput formControlName="resumeUrl" required>
+          </mat-form-field>
+  
+          <div class="button-container">
+            <button mat-raised-button color="primary" type="submit" class="submit-button">Submit Application</button>
+          </div>
+  
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

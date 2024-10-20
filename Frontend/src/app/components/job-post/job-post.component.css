@@ -1,0 +1,53 @@
+/* job-post.component.css */
+
+.job-post-card {
+  max-width: 700px; /* Adjusted card width */
+  margin: auto; /* Center card on the page */
+  padding: 20px; /* Add padding around the card */
+  border-radius: 10px; /* Rounded corners for the card */
+  background-color: #f3f4f6; /* Light grey background */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.job-post-form {
+  display: flex;
+  flex-direction: column; /* Stack the form elements */
+}
+
+.form-field {
+  margin-bottom: 20px; /* Spacing between form fields */
+}
+
+.mat-form-field {
+  width: 100%; /* Make form fields full width */
+  background-color: #ffffff; /* White background inside fields */
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #2196f3 !important; /* Change label color on focus to blue */
+}
+
+.mat-input-element {
+  background-color: #e3f2fd; /* Light blue background inside input */
+  color: #333; /* Text color inside the inputs */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the submit button */
+}
+
+button {
+  width: 100%; /* Full width button */
+  padding: 12px;
+  background-color: #1976d2; /* Blue button color */
+  color: white; /* White text color */
+  font-size: 16px; /* Larger font size for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d47a1; /* Darker blue on hover */
+}

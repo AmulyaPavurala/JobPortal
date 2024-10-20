@@ -1,0 +1,13 @@
+<div class="job-list container mt-4">
+  <h2 class="text-center mb-4">Available Jobs</h2>
+  <div *ngFor="let job of jobPosts" class="card mb-3">
+    <div class="card-body">
+      <h3 class="card-title">{{ job.jobTitle }}</h3>
+      <p class="card-text"><strong>Company:</strong> {{ job.company.companyName }}</p>
+      <p class="card-text"><strong>Location:</strong> {{ job.location }}</p>
+      <p class="card-text"><strong>Salary:</strong> {{ job.salaryRange }}</p>
+      <button (click)="viewJobDetails(job.id!)" class="btn btn-primary">View Details</button>
+
+      <a [routerLink]="['/jobs', job.id]" class="text-decoration-none"></a>
+    </div>
+  </div> 

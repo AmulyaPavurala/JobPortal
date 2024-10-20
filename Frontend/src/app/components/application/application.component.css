@@ -1,0 +1,33 @@
+/* General card styling */
+.apply-job-card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+  }
+  
+  /* Aligning form items */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Full width input fields */
+  .full-width {
+    width: 100%;
+    margin-bottom: 16px; /* Add some space between form fields */
+  }
+  
+  /* Submit button styling */
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  

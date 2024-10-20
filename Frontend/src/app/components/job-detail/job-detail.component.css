@@ -1,0 +1,15 @@
+/* job-detail.component.css */
+
+.card {
+    border: 1px solid #dee2e6; /* Light gray border */
+    border-radius: 0.25rem; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Adjust title size */
+}
+
+.card-text {
+    font-size: 1.1rem; /* Adjust text size */
+}
